@@ -1,0 +1,23 @@
+{
+    "name": "metarepo",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "packageManager": "pnpm@7.26.3",
+    "scripts": {
+        "preinstall": "meta git update && npx only-allow pnpm",
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "upd": "meta exec \"pnpm up\"",
+        "meta:update": "meta git update",
+        "meta:add": "meta git add .",
+        "meta:commit": "meta git commit",
+        "meta:push": "meta git push "
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "workspaces": [
+        "packages/*",
+        // "packages/solid/packages/*"
+    ]
+}

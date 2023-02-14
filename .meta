@@ -1,0 +1,15 @@
+{
+    "ignore": [
+        ".git",
+        ".vagrant",
+        ".vscode",
+        "node_modules"
+    ],
+    "projects": {
+        "packages/solid-js": "https://github.com/wongchichong/solid",
+        "packages/solid-ts-webpack": "https://github.com/wongchichong/solid-ts-webpack",
+        "packages/solid-router": "https://github.com/wongchichong/solid-router",
+        "packages/via.js": "https://github.com/wongchichong/via.js",
+        "packages/voby": "https://github.com/wongchichong/voby"
+    }
+}
