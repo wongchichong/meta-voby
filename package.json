@@ -11,13 +11,19 @@
         "meta:update": "meta git update",
         "meta:add": "meta git add .",
         "meta:commit": "meta git commit",
-        "meta:push": "meta git push "
+        "meta:push": "meta git push ",
+        "watch:oby": "pnpm --stream --parallel --filter=./packages/oby run watch",
+        "watch:voby": "pnpm -stream --parallel --filter=./packages/voby run watch",
+        "watch:via": "pnpm -stream --parallel --filter=./packages/via run watch",
+        "watch:via-demo": "pnpm -stream --parallel --filter=./packages/via-demo run watch",
+        "watch1": "pnpm run \"/^watch:.*/\" ",
+        "watch": "pnpm --stream --parallel --filter=\"./packages/oby\" --filter=\"./packages/voby\" --filter=\"./packages/via\" --filter=\"./packages/via-demo\" run watch",
+        "build": "pnpm --stream --parallel --filter=\"./packages/oby\" --filter=\"./packages/voby\" --filter=\"./packages/via\" --filter=\"./packages/via-demo\" run build"
     },
     "keywords": [],
     "author": "",
     "license": "ISC",
     "workspaces": [
-        "packages/*",
-        // "packages/solid/packages/*"
+        "packages/*"
     ]
 }
