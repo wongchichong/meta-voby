@@ -18,12 +18,18 @@
         "watch:via-demo": "pnpm -stream --parallel --filter=./packages/via-demo run watch",
         "watch1": "pnpm run \"/^watch:.*/\" ",
         "watch": "pnpm --stream --parallel --filter=\"./packages/oby\" --filter=\"./packages/voby\" --filter=\"./packages/via\" --filter=\"./packages/via-demo\" run watch",
-        "build": "pnpm --stream --parallel --filter=\"./packages/oby\" --filter=\"./packages/voby\" --filter=\"./packages/via\" --filter=\"./packages/via-demo\" run build"
+        "build": "pnpm --stream --parallel --filter=\"./packages/oby\" --filter=\"./packages/voby\" --filter=\"./packages/via\" --filter=\"./packages/via-demo\" run build",
+        "bump": "pnpm version patch -w packages/*",
+        "git:bump": "meta git commit -am 'Bump version to x.x.1'",
+        "publish": "pnpm publish --recursive",
+        "clean:nm:ps": "Get-ChildItem -Path . -Include node_modules -Recurse -Directory | Remove-Item -Force -Recurse -Confirm:$false",
+        "clean:nm": "for /d /r . %d in (node_modules) do @if exist \"%d\" (echo Removing \"%d\" & rd /s /q \"%d\")"
     },
     "keywords": [],
     "author": "",
     "license": "ISC",
     "workspaces": [
-        "packages/*"
+        "packages/*",
+        "packages/voby-demo/demo/*"
     ]
 }

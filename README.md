@@ -10,11 +10,22 @@ Please open .meta to see list of project working on.
 - **voby-router**: 
 
 ## Setup
+Execute these in root metarepo folder
 
 ```bash
 pnpm add -g meta
 cd meta-voby
 meta git update
+```
+
+To fetch all packages
+
+## Update
+Execute these in root metarepo folder
+```bash
+meta git add .
+meta git commit -m "message"
+meta git push
 ```
 
 To fetch all packages
