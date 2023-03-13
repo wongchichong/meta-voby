@@ -34,4 +34,4 @@ meta git commit -m "message"
 meta git push
 ```
 
-To fetch all packages
+To push all packages
