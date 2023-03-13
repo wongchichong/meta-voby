@@ -6,8 +6,14 @@ This is voby metarepo.
 
 Please open .meta to see list of project working on.
 
+- **oby**: Included for debug/step into, may remove in future.
+- **voby**: Voby modification for web worker,
 - **voby-demo**: Demo project that split from the main repo
-- **voby-router**: 
+- ~~voby-router~~: 
+- **via.js**: A fork of via.js to manipulate DOM in worker
+- **via-demo**: Original demo projects in via.js but detached
+- **voby-via-demo**: Original voby demo projects working in webworker (via.js)
+- **vhtml**: Some modification to create text node and comment node
 
 ## Setup
 Execute these in root metarepo folder
