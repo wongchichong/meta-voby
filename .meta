@@ -9,6 +9,7 @@
         "packages/oby": "https://github.com/wongchichong/oby",
         "packages/voby-router": "https://github.com/vobyjs/voby-router",
         "packages/via": "https://github.com/wongchichong/via.js",
-        "packages/voby": "https://github.com/wongchichong/voby"
+        "packages/voby": "https://github.com/wongchichong/voby",
+        "packages/vhtml": "https://github.com/wongchichong/vhtml"
     }
 }
