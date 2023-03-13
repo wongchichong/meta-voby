@@ -19,7 +19,7 @@
         "watch1": "pnpm run \"/^watch:.*/\" ",
         "watch": "pnpm --color --parallel --filter=\"./packages/oby\" --filter=\"./packages/voby\" --filter=\"./packages/via\" --filter=\"./packages/via-demo\" run watch",
         "//watch": "npm-run-all watch:oby watch:voby watch:via-demo",
-        "build": "pnpm --stream --parallel --filter=\"./packages/oby\" --filter=\"./packages/voby\" --filter=\"./packages/via\" --filter=\"./packages/via-demo\" run build",
+        "build": "pnpm --stream --filter=\"./packages/oby\" --filter=\"./packages/vhtml\" --filter=\"./packages/voby\" --filter=\"./packages/via\" --filter=\"./packages/via-demo\" run build",
         "bump": "pnpm version patch -w packages/*",
         "git:bump": "meta git commit -am 'Bump version to x.x.1'",
         "publish": "pnpm publish --recursive",

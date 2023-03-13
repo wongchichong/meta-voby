@@ -20,10 +20,11 @@ Execute these in root metarepo folder
 
 ```bash
 pnpm add -g meta
+git clone https://github.com/wongchichong/meta-voby
 cd meta-voby
 meta git update
 
-pnpm install
+meta exec "pnpm install"
 ```
 
 To fetch all packages
@@ -47,7 +48,7 @@ Execute these in root metarepo folder
 ```bash
 meta git add .
 meta git commit -m "message"
-meta git push
+meta git push origin
 ```
 
 To push all packages
