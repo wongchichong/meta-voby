@@ -22,9 +22,25 @@ Execute these in root metarepo folder
 pnpm add -g meta
 cd meta-voby
 meta git update
+
+pnpm install
 ```
 
 To fetch all packages
+
+
+## Build Sequence
+```bash
+cd packages\oby
+pnpm install
+pnpm build
+
+cd meta-voby
+meta git update
+
+pnpm install
+```
+
 
 ## Update
 Execute these in root metarepo folder

@@ -56,7 +56,7 @@ importers:
 
   packages/via:
     specifiers:
-      oby: workspace:*
+      oby: workspace:../oby
       typescript: ^4.9.5
     dependencies:
       oby: link:../oby
@@ -83,10 +83,10 @@ importers:
       '@types/node': ^18.13.0
       esbuild-ifdef: ^0.2.0
       htm: ^3.1.1
-      oby: workspace:*
+      oby: workspace:../oby
       typescript: ^4.9.5
-      vhtml: workspace:*
-      via: workspace:*
+      vhtml: workspace:../vhtml
+      via: workspace:../via
       vite: ^4.1.1
       vite-plugin-conditional-compiler: ^0.0.6
     dependencies:
