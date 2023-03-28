@@ -1,0 +1,36 @@
+{
+    "name": "metarepo",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "packageManager": "pnpm@7.26.3",
+    "scripts": {
+        "preinstall": "meta git update && npx only-allow pnpm",
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "upd": "meta exec \"pnpm up\"",
+        "meta:update": "meta git update",
+        "meta:add": "meta git add .",
+        "meta:commit": "meta git commit",
+        "meta:push": "meta git push ",
+        "watch:oby": "pnpm --filter=./packages/oby run watch",
+        "watch:voby": "pnpm --filter=./packages/voby run watch",
+        "watch:via": "pnpm --filter=./packages/via run watch",
+        "watch:via-demo": "pnpm --parallel --filter=./packages/via-demo run watch",
+        "watch1": "pnpm run \"/^watch:.*/\" ",
+        "watch": "pnpm --color --parallel --filter=\"./packages/oby\" --filter=\"./packages/voby\" --filter=\"./packages/via\" --filter=\"./packages/via-demo\" run watch",
+        "//watch": "npm-run-all watch:oby watch:voby watch:via-demo",
+        "build": "pnpm --stream --filter=\"./packages/oby\" --filter=\"./packages/vhtml\" --filter=\"./packages/voby\" --filter=\"./packages/via\" --filter=\"./packages/via-demo\" run build",
+        "bump": "pnpm version patch -w packages/*",
+        "git:bump": "meta git commit -am 'Bump version to x.x.1'",
+        "publish": "pnpm publish --recursive",
+        "clean:nm:ps": "Get-ChildItem -Path . -Include node_modules -Recurse -Directory | Remove-Item -Force -Recurse -Confirm:$false",
+        "clean:nm": "for /d /r . %d in (node_modules) do @if exist \"%d\" (echo Removing \"%d\" & rd /s /q \"%d\")"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "workspaces": [
+        "packages/*",
+        "packages/voby-demo/demo/*"
+    ]
+}
