@@ -10,7 +10,7 @@
         "packages/voby-router": "https://github.com/vobyjs/voby-router",
         "packages/via": "https://github.com/wongchichong/via.js",
         "packages/via-demo": "https://github.com/wongchichong/via-demo",
-        "packages/voby": "https://github.com/wongchichong/voby",
+        "packages/woby": "https://github.com/wongchichong/woby",
         "packages/voby-demo": "https://github.com/wongchichong/voby-demo",
         "packages/voby-via-demo": "https://github.com/wongchichong/voby-via-demo",
         "packages/vhtml": "https://github.com/wongchichong/vhtml"
